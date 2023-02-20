@@ -8,7 +8,7 @@ fetch(BASE_URL + "/skills")
   .catch((error) => console.error(error));
 
 function showSkills(data) {
-  const table = document.querySelector("#skills-list");
+  const table = document.getElementById("skills-list");
   table.innerHTML = "";
 
   data.forEach((skill) => {
